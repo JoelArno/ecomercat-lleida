@@ -1,4 +1,4 @@
-javapublic class CompteBancari {
+public class CompteBancari {
 
     private String titular;
     private String iban;
