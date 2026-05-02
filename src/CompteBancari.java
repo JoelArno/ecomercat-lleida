@@ -1,4 +1,4 @@
-public class CompteBancari {
+javapublic class CompteBancari {
 
     private String titular;
     private String iban;
@@ -8,10 +8,10 @@ public class CompteBancari {
     private static final double SALDO_NORMAL_MAX = 5000.0;
 
     public CompteBancari(String titular, String iban, double saldoInicial) {
-        if (titular == null || titular.equals("")) {
+        if (titular == null || titular.isBlank()) {
             throw new IllegalArgumentException("El titular no pot ser buit");
         }
-        if (iban == null || iban.equals("")) {
+        if (iban == null || iban.isBlank()) {
             throw new IllegalArgumentException("L'IBAN no pot ser buit");
         }
         if (saldoInicial < 0) {
